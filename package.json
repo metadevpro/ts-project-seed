@@ -1,0 +1,62 @@
+{
+  "name": "ts-project-seed",
+  "version": "1.0.0",
+  "description": "A seed project with the initial plumbing for TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rimraf dist && npm run lint && tsc -p tsconfig.json",
+    "build:w": "tsc -p tsconfig.json -w",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test:tdd": "mocha --reporter min --compilers ts:ts-node/register \"src/**/*.spec.ts\" --watch",
+    "test": "mocha --recursive --compilers ts:ts-node/register \"src/**/*.spec.ts\"",
+    "cover": "nyc npm test"
+  },
+  "repository": {
+    "url": "https://github.com/metadevpro/ts-project-seed"
+  },
+  "keywords": [
+    "typescript",
+    "scaffolding"
+  ],
+  "author": { 
+    "name": "Pedro J. Molina", 
+    "url": "http://pjmolina.com"
+  },
+  "license": "CC0-1.0",
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "typings",
+      "src/**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html",
+      "text"
+    ],
+    "all": true
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.30",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  }  
+}
