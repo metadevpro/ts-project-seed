@@ -14,8 +14,8 @@ TypeScript seed project. Use it to scaffold a TS project with all the tooling ne
 
 ```
 git clone https://github.com/metadevpro/ts-project-seed <yourProjectName>
-git remote remove origin
 cd <yourProjectName>
+git remote remove origin
 npm (or yarn) install
 ```
 
