@@ -8,8 +8,8 @@
     "build": "rimraf dist && npm run lint && tsc -p tsconfig.json",
     "build:w": "tsc -p tsconfig.json -w",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
-    "test:tdd": "mocha --reporter min --compilers ts:ts-node/register \"src/**/*.spec.ts\" --watch",
-    "test": "mocha --recursive --compilers ts:ts-node/register \"src/**/*.spec.ts\"",
+    "test:tdd": "mocha --reporter min --require ts-node/register \"src/**/*.spec.ts\" --watch",
+    "test": "mocha --recursive --require ts-node/register \"src/**/*.spec.ts\"",
     "cover": "nyc npm test"
   },
   "repository": {
@@ -19,8 +19,8 @@
     "typescript",
     "scaffolding"
   ],
-  "author": { 
-    "name": "Pedro J. Molina", 
+  "author": {
+    "name": "Pedro J. Molina",
     "url": "http://pjmolina.com"
   },
   "license": "CC0-1.0",
@@ -50,13 +50,13 @@
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.30",
+    "@types/node": "^8.0.34",
     "chai": "^4.1.2",
-    "mocha": "^3.5.3",
+    "mocha": "^4.0.1",
     "nyc": "^11.2.1",
     "rimraf": "^2.6.2",
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0",
-    "typescript": "^2.5.2"
-  }  
+    "typescript": "^2.5.3"
+  }
 }
