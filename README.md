@@ -1,5 +1,7 @@
 # ts-project-seed
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/metadevpro/ts-project-seed.svg)](https://greenkeeper.io/)
+
 TypeScript seed project. Use it to scaffold a TS project with all the tooling need to *properly* (opinated) set up a project.
 
 [![Build Status](https://travis-ci.org/metadevpro/ts-project-seed.svg?branch=master)](https://travis-ci.org/metadevpro/ts-project-seed)
