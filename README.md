@@ -52,6 +52,13 @@ Continous build:
 npm run build:w
 ```
 
+### Uglify
+Concat and minify all JS files in `dist/` folder to one output (default `dist/all.min.js`).
+
+```
+npm run uglify
+```
+
 ### Unit Test
 Tests framework used are: mocha & chai.
 
