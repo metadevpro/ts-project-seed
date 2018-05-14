@@ -2,7 +2,9 @@
 
 TypeScript seed project. Use it to scaffold a TS project with all the tooling need to *properly* (opinated) set up a project.
 
-[![Build Status](https://travis-ci.org/metadevpro/ts-project-seed.svg?branch=master)](https://travis-ci.org/metadevpro/ts-project-seed)
+[![Travis](https://img.shields.io/travis/omachala/ts-project-seed.svg)](https://travis-ci.org/omachala/ts-project-seed)
+[![Coveralls github](https://img.shields.io/coveralls/github/omachala/ts-project-seed.svg)](https://coveralls.io/github/omachala/ts-project-seed)
+
 [![Dependency Status](https://david-dm.org/metadevpro/ts-project-seed.svg)](https://david-dm.org/metadevpro/ts-project-seed)
 [![devDependencies Status](https://david-dm.org/metadevpro/ts-project-seed/dev-status.svg)](https://david-dm.org/metadevpro/ts-project-seed?type=dev)
 [![bitHound Overall Score](https://www.bithound.io/github/metadevpro/ts-project-seed/badges/score.svg)](https://www.bithound.io/github/metadevpro/ts-project-seed)
