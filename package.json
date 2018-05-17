@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "rimraf dist && npm run lint && tsc -p tsconfig.json",
+    "build": "npm run clean && npm run lint && tsc -p tsconfig.json && npm run uglify && npm run browserify",
+    "uglify": "uglifyjs-folder dist --output dist/all.min.js --pattern \"**/*.js,!**/*min.js\"",
+    "browserify": "browserify -e dist/all.min.js --standalone TsProjectSeed -o dist/all.min.js",
     "build:w": "tsc -p tsconfig.json -w",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "test:tdd": "mocha --reporter min --require ts-node/register \"src/**/*.spec.ts\" --watch",
     "test": "mocha --recursive --require ts-node/register \"src/**/*.spec.ts\"",
-    "cover": "nyc npm test"
+    "cover": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "url": "https://github.com/metadevpro/ts-project-seed"
@@ -50,13 +52,17 @@
   "devDependencies": {
     "@types/chai": "^4.0.10",
     "@types/mocha": "^5.0.0",
+    "browserify": "^16.2.2",
     "@types/node": "^10.0.3",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
     "mocha": "^5.0.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^11.4.1",
     "rimraf": "^2.6.2",
     "ts-node": "^6.0.0",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.6.2",
+    "uglifyjs-folder": "^1.5.1"
   }
 }

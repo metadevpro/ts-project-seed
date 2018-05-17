@@ -2,7 +2,9 @@
 
 TypeScript seed project. Use it to scaffold a TS project with all the tooling need to *properly* (opinated) set up a project.
 
-[![Build Status](https://travis-ci.org/metadevpro/ts-project-seed.svg?branch=master)](https://travis-ci.org/metadevpro/ts-project-seed)
+[![Travis](https://img.shields.io/travis/metadevpro/ts-project-seed.svg)](https://travis-ci.org/metadevpro/ts-project-seed)
+[![Coveralls github](https://img.shields.io/coveralls/github/metadevpro/ts-project-seed.svg)](https://coveralls.io/github/metadevpro/ts-project-seed)
+
 [![Dependency Status](https://david-dm.org/metadevpro/ts-project-seed.svg)](https://david-dm.org/metadevpro/ts-project-seed)
 [![devDependencies Status](https://david-dm.org/metadevpro/ts-project-seed/dev-status.svg)](https://david-dm.org/metadevpro/ts-project-seed?type=dev)
 [![bitHound Overall Score](https://www.bithound.io/github/metadevpro/ts-project-seed/badges/score.svg)](https://www.bithound.io/github/metadevpro/ts-project-seed)
@@ -50,6 +52,13 @@ Continous build:
 
 ```
 npm run build:w
+```
+
+### Uglify
+Concat and minify all JS files in `dist/` folder to one output (default `dist/all.min.js`).
+
+```
+npm run uglify
 ```
 
 ### Unit Test
