@@ -1,6 +1,6 @@
 {
   "name": "ts-project-seed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A seed project with the initial plumbing for TypeScript.",
   "main": "index.js",
   "scripts": {
