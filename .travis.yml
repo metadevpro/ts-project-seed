@@ -1,4 +1,9 @@
 language: node_js
 node_js:
   - "stable"
+
+# work-around for overriding `npm ci` making greekeeper failing on travis CI PRs
+install:
+  - npm install
+
 script: npm run coveralls
