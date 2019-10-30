@@ -53,7 +53,7 @@
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.6.2",
+    "@types/node": "^12.12.2",
     "browserify": "^16.3.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.5",
