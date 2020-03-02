@@ -51,7 +51,7 @@
     "all": true
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
+    "@types/chai": "^4.2.10",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.6.2",
     "browserify": "^16.3.0",
