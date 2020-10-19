@@ -17,7 +17,7 @@ TypeScript seed project. Use it to scaffold a TS project with all the tooling ne
 2. Remove origin to seed project
 3. Change the license, metadata, etc. and start building.
 
-```
+```bash
 git clone https://github.com/metadevpro/ts-project-seed <yourProjectName>
 cd <yourProjectName>
 git remote remove origin
@@ -25,76 +25,82 @@ npm (or yarn) install
 ```
 
 ## Features
+
 Scripts provided:
 
 ### Lint
+
 Linting using tslint.
 
-```
+```bash
 npm run lint
 ```
 
 ### Clean
+
 Clear the `dist/` folder.
 
-```
+```bash
 npm run clean
 ```
 
 ### Build
+
 Transpile TS code to JS in `dist/` folder. Maps included.
 
-```
+```bash
 npm run build
 ```
 
 Continous build:
 
-```
+```bash
 npm run build:w
 ```
 
 ### Uglify
+
 Concat and minify all JS files in `dist/` folder to one output (default `dist/all.min.js`).
 
-```
+```bash
 npm run uglify
 ```
 
 ### Unit Test
+
 Tests framework used are: mocha & chai.
 
 TDD mode to run it concurrently with your editions:
 
-```
+```bash
 npm run test:tdd
 ```
 
 CI mode to run it only one:
 
-```
+```bash
 npm test
 ```
 
 Testing with coverage:
 
-```
+```bash
 nyc npm test
 nyc report -r text lcov html
 coverage/index.html
 ```
 
-
 ### Coverage Test
+
 TDD mode to run it concurrently with your editions:
 
-```
+```bash
 npm run test:tdd
 ```
 
 CI mode to run it only one:
 
-```
+```bash
 npm run test
 ```
 
@@ -116,11 +122,12 @@ npm run test
 This project seed will be updated to keep the dependences up to date.
 
 ## License
+
 This project seed is licensed as Public Domain. Therefore, do whatever you want including changing the license for your needs in your project.
 More specifically, it was licensed as CC0 (Creative Commons 0) to further improve the freedom of a Public Domain Licence in context where it is not applicable.
 
-
 ## Credits
+
 **Contact:** Pedro J. Molina | github: [pjmolina](https://github.com/pjmolina) | twitter: [pmolinam](https://twitter.com/pmolinam)
 
-(c) 2017. Metadev S.L. [https://metadev.pro](https://metadev.pro) twitter: [metad3v](https://twitter.com/metad3v)
+(c) 2017-2020. Metadev S.L. [https://metadev.pro](https://metadev.pro) twitter: [metad3v](https://twitter.com/metad3v)
