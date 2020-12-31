@@ -7,7 +7,6 @@ TypeScript seed project. Use it to scaffold a TS project with all the tooling ne
 [![Dependency Status](https://david-dm.org/metadevpro/ts-project-seed.svg)](https://david-dm.org/metadevpro/ts-project-seed)
 [![devDependencies Status](https://david-dm.org/metadevpro/ts-project-seed/dev-status.svg)](https://david-dm.org/metadevpro/ts-project-seed?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/metadevpro/ts-project-seed/badge.svg)](https://snyk.io/test/github/metadevpro/ts-project-seed)
-[![Greenkeeper badge](https://badges.greenkeeper.io/metadevpro/ts-project-seed.svg)](https://greenkeeper.io/)
 
 ## How to use it
 
