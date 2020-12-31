@@ -4,7 +4,6 @@ TypeScript seed project. Use it to scaffold a TS project with all the tooling ne
 
 [![Travis](https://img.shields.io/travis/metadevpro/ts-project-seed.svg)](https://travis-ci.org/metadevpro/ts-project-seed)
 [![Coveralls github](https://img.shields.io/coveralls/github/metadevpro/ts-project-seed.svg)](https://coveralls.io/github/metadevpro/ts-project-seed)
-
 [![Dependency Status](https://david-dm.org/metadevpro/ts-project-seed.svg)](https://david-dm.org/metadevpro/ts-project-seed)
 [![devDependencies Status](https://david-dm.org/metadevpro/ts-project-seed/dev-status.svg)](https://david-dm.org/metadevpro/ts-project-seed?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/metadevpro/ts-project-seed/badge.svg)](https://snyk.io/test/github/metadevpro/ts-project-seed)
