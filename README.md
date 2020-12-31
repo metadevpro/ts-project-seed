@@ -115,7 +115,8 @@ npm run test
 - `mocha` Testing framework.
 - `chai` Assertion framework.
 - `rimraf` Safe cross-platform rmdir for clean step.
-- `tslint` TS linter.
+- `eslint` JS/TS linter.
+- `prettier` for clean and consistent style-code.
 - `typescript`, of course.
 
 This project seed will be updated to keep the dependences up to date.
