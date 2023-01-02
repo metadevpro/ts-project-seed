@@ -128,4 +128,4 @@ More specifically, it was licensed as CC0 (Creative Commons 0) to further improv
 
 **Contact:** Pedro J. Molina | github: [pjmolina](https://github.com/pjmolina) | twitter: [pmolinam](https://twitter.com/pmolinam)
 
-(c) 2017-2020. Metadev S.L. [https://metadev.pro](https://metadev.pro) twitter: [metad3v](https://twitter.com/metad3v)
+(c) 2017-2023. Metadev S.L. [https://metadev.pro](https://metadev.pro) twitter: [metad3v](https://twitter.com/metad3v)
