@@ -1,6 +1,6 @@
 # ts-project-seed
 
-TypeScript seed project. Use it to scaffold a TS project with all the tooling need to *properly* (opinated) set up a project.
+TypeScript seed project. Use it to scaffold a TS project with all the tooling need to _properly_ (opinated) set up a project.
 
 [![Travis](https://img.shields.io/travis/metadevpro/ts-project-seed.svg)](https://travis-ci.org/metadevpro/ts-project-seed)
 [![Coveralls github](https://img.shields.io/coveralls/github/metadevpro/ts-project-seed.svg)](https://coveralls.io/github/metadevpro/ts-project-seed)

@@ -4,6 +4,8 @@
     "description": "A seed project with the initial plumbing for TypeScript.",
     "main": "index.js",
     "scripts": {
+        "format:check": "prettier --check .",
+        "format": "prettier --write .",
         "clean": "rimraf dist",
         "build": "npm run clean && npm run lint && tsc -p tsconfig.json && npm run uglify && npm run browserify",
         "uglify": "uglifyjs-folder dist --output dist/all.min.js --pattern \"**/*.js,!**/*min.js\"",
@@ -15,7 +17,8 @@
         "test:tdd": "mocha --reporter min --require ts-node/register src/**/*.spec.ts --watch",
         "test": "mocha --recursive --require ts-node/register src/**/*.spec.ts",
         "cover": "nyc npm test",
-        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+        "ci": "npm run format:check &&  npm run test && npm run build"
     },
     "repository": {
         "url": "https://github.com/metadevpro/ts-project-seed"
@@ -53,24 +56,25 @@
         "all": true
     },
     "devDependencies": {
-        "@types/chai": "^4.3.4",
-        "@types/mocha": "^10.0.1",
-        "@types/node": "^18.11.18",
-        "@typescript-eslint/eslint-plugin": "^5.48.0",
-        "@typescript-eslint/parser": "^5.48.0",
-        "browserify": "^17.0.0",
-        "chai": "^4.3.7",
+        "@eslint/js": "^10.0.1",
+        "@types/chai": "^5.2.3",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^26.2.0",
+        "@typescript-eslint/eslint-plugin": "^8.67.0",
+        "@typescript-eslint/parser": "^8.67.0",
+        "browserify": "^17.0.1",
+        "chai": "^6.2.2",
         "coveralls": "^3.1.1",
-        "eslint": "^8.31.0",
-        "eslint-config-prettier": "^8.6.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "mocha": "^10.2.0",
+        "eslint": "^10.8.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "mocha": "^11.8.0",
         "mocha-lcov-reporter": "^1.3.0",
-        "nyc": "^15.1.0",
-        "prettier": "^2.8.1",
-        "rimraf": "^3.0.2",
-        "ts-node": "^10.9.1",
-        "typescript": "^4.9.4",
-        "uglifyjs-folder": "^3.2.0"
+        "nyc": "^18.0.0",
+        "prettier": "^3.9.6",
+        "rimraf": "^6.1.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^6.0.3",
+        "uglifyjs-folder": "^3.3.0"
     }
 }
